@@ -18,7 +18,7 @@ var guessSoFartext = document.getElementById("guessSoFar");
 var computerChoice = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "y", "x", "z"]
 var used = [];
 compGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
-console.log(compGuess);
+// console.log(compGuess);
 
 document.onkeyup = function (event) {
     var userGuess = event.key;
@@ -37,7 +37,8 @@ document.onkeyup = function (event) {
             used = [];
             guessSoFartext.textContent = ("Guesses So far: 0");
             compGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
-            console.log(compGuess);
+            console.log("You Win!");
+            // console.log(compGuess);
 
         }
 
@@ -49,7 +50,7 @@ document.onkeyup = function (event) {
         used = [];
         guessSoFartext.textContent = ("Guessed So far: 0");
         compGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
-        console.log(compGuess);
+        console.log("You Lose!");
 
 
 
