@@ -23,7 +23,7 @@ console.log(compGuess);
 document.onkeyup = function (event) {
     var userGuess = event.key;
     used.push(userGuess)
-    if (guessLeft != 0) {
+    if (guessLeft != 1) {
         guessLeft -= 1;
         guessLefttext.textContent = ("Guesses Left: " + guessLeft);
         guessSoFartext.textContent = ("Guessed So far: " + used);
