@@ -26,7 +26,7 @@ document.onkeyup = function (event) {
     if (guessLeft != 0) {
         guessLeft -= 1;
         guessLefttext.textContent = ("Guesses Left: " + guessLeft);
-        guessSoFartext.textContent = ("Guessed so far: " + used);
+        guessSoFartext.textContent = ("Guessed So far: " + used);
 
 
         if (compGuess === userGuess) {
@@ -47,7 +47,7 @@ document.onkeyup = function (event) {
         guessLeft = 9;
         guessLefttext.textContent = ("Guesses Left: 9");
         used = [];
-        guessSoFartext.textContent = ("Guesses So far: 0");
+        guessSoFartext.textContent = ("Guessed So far: 0");
         compGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
         console.log(compGuess);
 
