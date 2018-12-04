@@ -18,11 +18,15 @@ var guessSoFartext = document.getElementById("guessSoFar");
 var computerChoice = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "y", "x", "z"]
 var used = [];
 compGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
-// console.log(compGuess);
+
+
+console.log(compGuess);
 
 document.onkeyup = function (event) {
-    var userGuess = event.key;
+    var userGuess = event.key
+     userGuess = userGuess.toLowerCase();
     used.push(userGuess)
+    // if(compGuess.indexOf(userGuess) >= 0){
     if (guessLeft != 1) {
         guessLeft -= 1;
         guessLefttext.textContent = ("Guesses Left: " + guessLeft);
@@ -38,7 +42,7 @@ document.onkeyup = function (event) {
             guessSoFartext.textContent = ("Guesses So far: 0");
             compGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
             console.log("You Win!");
-            // console.log(compGuess);
+            console.log(compGuess);
 
         }
 
@@ -55,6 +59,7 @@ document.onkeyup = function (event) {
 
 
     }
+    // }
 
 
 }

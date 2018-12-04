@@ -1,0 +1,13 @@
+*{
+    background-color: black;
+}
+
+h1 {
+    color: blue;
+    font-weight: bold;
+    padding: 10px;
+}
+
+p {
+    color: rgb(101, 191, 101);
+}
