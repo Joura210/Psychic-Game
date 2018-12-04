@@ -26,7 +26,7 @@ document.onkeyup = function (event) {
     var userGuess = event.key
      userGuess = userGuess.toLowerCase();
     used.push(userGuess)
-    // if(compGuess.indexOf(userGuess) >= 0){
+    if(computerChoice.indexOf(userGuess) >= 0){
     if (guessLeft != 1) {
         guessLeft -= 1;
         guessLefttext.textContent = ("Guesses Left: " + guessLeft);
@@ -59,7 +59,7 @@ document.onkeyup = function (event) {
 
 
     }
-    // }
+    }
 
 
 }
