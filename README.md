@@ -1,2 +1,2 @@
-# Word_Guess_Game
+# Psychic-Game
 JS HW Easy mode
