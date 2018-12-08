@@ -20,12 +20,12 @@ var used = [];
 compGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
 
 
-console.log(compGuess);
+// console.log(compGuess);
 
 document.onkeyup = function (event) {
     var userGuess = event.key
      userGuess = userGuess.toLowerCase();
-    used.push(userGuess)
+    used.push(userGuess);
     if(computerChoice.indexOf(userGuess) >= 0){
     if (guessLeft != 1) {
         guessLeft -= 1;
@@ -42,7 +42,7 @@ document.onkeyup = function (event) {
             guessSoFartext.textContent = ("Guesses So far: 0");
             compGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
             console.log("You Win!");
-            console.log(compGuess);
+            // console.log(compGuess);
 
         }
 
@@ -58,10 +58,10 @@ document.onkeyup = function (event) {
 
 
 
-    }
-    }
+    };
+    };
 
-
+    
 }
 
 // win will be when compguess===userguess
