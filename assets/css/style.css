@@ -1,4 +1,4 @@
-*{
+ body {
     background-color: black;
 }
 
@@ -7,7 +7,7 @@ h1 {
     font-weight: bold;
     padding: 10px;
     text-align: center;
-    font-size: 50px;
+    font-size: 50px; 
 }
 
 p {
