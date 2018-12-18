@@ -1,6 +1,6 @@
 
 // global variables
-
+ 
 var wins = 0;
 var losses = 0;
 var guessLeft = 9;
@@ -48,7 +48,7 @@ document.onkeyup = function (event) {
 
     } else {
         losses++;
-        lossText.textContent = ("Loses : " + losses);
+        lossText.textContent = ("Losses : " + losses);
         guessLeft = 9;
         guessLefttext.textContent = ("Guesses Left: 9");
         used = [];
